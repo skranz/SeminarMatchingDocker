@@ -7,10 +7,9 @@ FROM skranz/rskranz:latest
 
 MAINTAINER Sebastian Kranz "sebastian.kranz@uni-ulm.de"
 
-# install postfix or sendmail
-RUN apt-get update
-#RUN apt-get install -y postfix
-RUN apt-get install -y sendmail
+# install and start cron
+RUN apt-get update && apt-get install -y cron
+COPY start_cron.sh /etc/cont-init.d/start_cron.sh
 
 # copy and run package installation file
 COPY install.r /tmp/install.r

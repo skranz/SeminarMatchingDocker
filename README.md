@@ -6,8 +6,13 @@ It is currently tested at the economics department at Ulm University. The contai
 ```
 docker run -entrypoint="/usr/bin/with-contenv bash" --name seminarmatching -d -p 8701:8787 -p 3801:3838 \
   -e ROOT=TRUE -e USER=<YourUsername> -e PASSWORD=<YourSecurePassword> \
+  -e RUN_RSTUDIO=yes -e RUN_SHINY=yes \
   -v ~/docker/shiny/app/:/srv/shiny-server/ \
   -v ~/docker/shinyrstudio/container_home:/home/<YourUsername>/work \
   -v /srv/shinylog/:/var/log/ \
   skranz/seminarmatching:latest  
 ```
+
+### Configure crontab to run autorun.R
+
+TO DO

@@ -1,0 +1,8 @@
+# Template for a crontab that will run each night
+# the specified SeminarMatching autorun script
+# Adapt the path to the script and possibly the time
+# Here it runs at 3:15 in the night
+
+15 3 * * * /usr/local/bin/Rscript <path to your R script>
+
+# sudo crontab sem-crontab.txt
