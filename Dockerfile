@@ -14,3 +14,7 @@ COPY start_cron.sh /etc/cont-init.d/start_cron.sh
 # copy and run package installation file
 COPY install.r /tmp/install.r
 RUN Rscript /tmp/install.r
+
+# Use manual shiny-server configuration
+COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
+RUN chmod 644 /etc/shiny-server/shiny-server.conf
