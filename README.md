@@ -1,5 +1,5 @@
 THE SOFTWARE IS CURRENTLY IN TEST PHASE
-
+ 
 Docker container to deploy the R shiny app SeminarMatching: a web-based framework to assign students to seminar slots using the Gale-Shapley algorithm.
 There are several apps for admins, teachers and students. A detailed description is not yet available.
 
