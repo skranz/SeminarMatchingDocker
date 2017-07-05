@@ -15,7 +15,7 @@ COPY start_cron.sh /etc/cont-init.d/start_cron.sh
 COPY install.r /tmp/install.r
 RUN Rscript /tmp/install.r 
 
-COPY install.r /tmp/install2.r
+COPY install2.r /tmp/install2.r
 RUN Rscript /tmp/install2.r 
 
 
