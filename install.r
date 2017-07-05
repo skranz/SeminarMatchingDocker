@@ -60,4 +60,4 @@ cat("\n\nFailed installations:\n")
 print(failed)
 
 cat("\n\nSuccessfully installed:\n")
-print(success)
+print(success) 
