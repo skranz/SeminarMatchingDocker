@@ -47,13 +47,7 @@ from.github = function(pkg, lib = path, ref="master", overwrite = glob.overwrite
   }
 
 }
-
-from.cran("matchingR")
-from.cran("rhandsontable")
-from.github(lib=path,"skranz/TableTree",ref = "master")
-from.github(lib=path,"skranz/YamlObjects",ref = "master")
-from.github(lib=path,"skranz/shinyPart",ref = "master")
-from.github(lib=path,"skranz/loginPart",ref = "master")
+from.github(lib=path,"skranz/SeminarMatching",ref = "master")
 
 
 cat("\n\nFailed installations:\n")
